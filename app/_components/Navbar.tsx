@@ -28,7 +28,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="fixed z-30 flex justify-center w-full py-1 align-middle mt-1 transition-all">
+    <nav className="fixed z-30 flex justify-center md:justify-end items-center pe-10 w-full py-1 align-middle md:mt-1 transition-all">
       <ul className="inline-flex gap-5 font-semibold py-2 px-4 rounded-3xl shadow-sm shadow-slate-800 border border-1 border-solid border-slate-700 text-slate-400 bg-slate-950 bg-opacity-25 backdrop-blur-md">
         <Link href="#welcome" className="cursor-pointer">
           <li
@@ -38,7 +38,7 @@ const Navbar = () => {
                 : ''
             }`}
           >
-            Welcome
+            Willkommen
           </li>
         </Link>
         <Link href="#stack" className="cursor-pointer">

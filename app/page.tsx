@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import picFernschicht from '../app/assets/fernschicht.de.webp';
 import picTobischmid from '../app/assets/website-portfolio.webp';
-import picReact from '../app/assets/react-portfolio.webp';
+import picHerzensstark from '../app/assets/herzensstark-life.webp';
 import ScrambleText from './_components/ScrambleText';
 import Navbar from './_components/Navbar';
 
@@ -43,27 +43,40 @@ const stack3 = [
 
 export default function Home() {
   return (
-    <div className="bg-gradient-to-tl from-black to-gray-900 relative">
-      <Navbar />
+    <div className=" px-5 bg-gradient-to-tl from-black to-gray-900 relative overflow-hidden">
+      <div className="mt-4">
+        <Navbar />
+      </div>
       {/* sections */}
       <section
         id="welcome"
-        className="z-20 relative flex flex-col w-screen h-screen justify-center items-center"
+        className="z-20 mb-32 sm:mb-0 mt-24 sm:-mt-10 relative flex flex-col sm:w-screen sm:h-screen justify-center items-center"
       >
-        <p className="mb-8 text-xl text-gray-400"> &#128075; Welcome</p>
-        <h1 className="mb-8 text-7xl font-bold mx-auto pl-10">
+        <p className="mb-8 text-xl text-gray-400"> &#128075; Willkommen</p>
+        <h1 className="mb-8 text-center md:text-start text-4xl md:text-7xl font-bold mx-auto md:pl-10 h-[80px] md:h-[0px]">
           <span className="text-transparent bg-clip-text bg-gradient-to-tr from-slate-700 to-white">
-            Hi, I'am
+            Hi, ich bin{' '}
+            <span className="md:hidden">
+              <br />
+            </span>
           </span>
-          <span className="inline-block ml-3 w-[540px] bg-clip-text text-transparent bg-gradient-to-b from-purple-200  via-fuchsia-500 to-purple-950">
-            {' '}
+          <span className="inline md:inline-block w-[540px] bg-clip-text text-transparent bg-gradient-to-b from-purple-200  via-fuchsia-500 to-purple-950">
             <ScrambleText text="Tobias Schmid" duration={3000} />
           </span>
         </h1>
-        <p className="text-xl text-gray-400 w-[45%] text-center">
-          I'm a Software Engineer from Nuermberg, specializing in frontend
-          development, passionate about building elegant solutions to complex
-          problems.
+        <h2 className="sr-only">
+          freelance marketing zirndorf, freelancer marketing Oberasbach,
+          webdesign, SEO freelance in Fürth, SEO freelance in Nürnberg, SEO
+          freelance in Zirndorf, SEO freelance Oberasbach, freelance webdesigner
+          fürth, freelance webdesigner nürnberg, freelancer, freelancer
+          beauftragen, IT, Webmaster Oberasbach, IT Support Zirndorf, IT Support
+          Fürth, Emails einrichten,
+        </h2>
+        <p className="text-xl text-gray-400 sm:w-[90%] md:w-[45%] text-center">
+          Softwareentwickler aus Zirndorf bei Nürnberg, spezialisiert auf
+          Frontend-Entwicklung und Webdesign. Mit Leidenschaft entwickle ich
+          elegante Lösungen für komplexe Probleme und biete zugleich
+          IT-Unterstützung für kleine Unternehmen an.
         </p>
         <div className="flex gap-4 mt-8">
           <Link
@@ -79,7 +92,7 @@ export default function Home() {
             target="_blank"
             aria-label="CV Tobias Schmid"
           >
-            <button className="px-4 py-3 text-purple-600   font-bold rounded-2xl border border-1 border-solid border-purple-500 bg-purple-800 bg-opacity-10 hover:scale-105 transition-all">
+            <button className="px-4 py-3 text-purple-600 font-bold rounded-2xl border border-1 border-solid border-purple-500 bg-purple-800 bg-opacity-10 hover:scale-105 transition-all">
               Download CV
             </button>
           </Link>
@@ -157,7 +170,7 @@ export default function Home() {
             </svg>
           </Link>
         </div>
-        <div className="absolute bottom-4 animate-bounce flex flex-col gap-3 place-items-center">
+        <div className="md:absolute mt-16 md:mt-0 bottom-1 animate-bounce flex flex-col gap-3 place-items-center">
           <p className="text-slate-400 text-sm">scroll to explore</p>
           <svg
             width="23px"
@@ -174,23 +187,16 @@ export default function Home() {
       {/* stack */}
       <section
         id="stack"
-        className="z-20 flex flex-col w-screen h-screen justify-center items-center"
+        className="z-20 flex flex-col mb-32 md:mb-0 md:w-screen md:h-screen justify-center items-center"
       >
-        <h4 className="sr-only">
-          freelance marketing zirndorf, freelancer marketing Oberasbach,
-          webdesign, SEO freelance in Fürth, SEO freelance in Nürnberg, SEO
-          freelance in Zirndorf, SEO freelance Oberasbach, freelance webdesigner
-          fürth, freelance webdesigner nürnberg, freelancer, freelancer
-          beauftragen
-        </h4>
         <p className="mb-8 text-xl text-gray-400"> &#128195; The stack</p>
-        <h2 className="mb-8 text-7xl font-bold">
+        <h2 className="mb-8 text-center text-4xl md:text-7xl font-bold">
           <span className="text-transparent bg-clip-text bg-gradient-to-tr from-slate-700 to-white">
-            Learn and
+            Lernen und
           </span>
           <span className="font-bold bg-clip-text text-transparent bg-gradient-to-b from-purple-200  via-fuchsia-500 to-purple-950">
             {' '}
-            Grow
+            Wachsen
           </span>
         </h2>
 
@@ -200,7 +206,7 @@ export default function Home() {
             {stack1.map((skill, index) => (
               <button
                 key={index}
-                className="px-4 py-2 text-md text-gray-300 shadow-sm shadow-slate-600 rounded-lg border border-1 border-slate-800 bg-gradient-to-tr from-slate-600 via-slate-950 to-slate-800 whitespace-nowrap"
+                className="px-2 md:px-4 py-2 md:py-2 text-sm md:text-md text-gray-300 shadow-sm shadow-slate-600 rounded-lg border border-1 border-slate-800 bg-gradient-to-tr from-slate-600 via-slate-950 to-slate-800 whitespace-nowrap"
               >
                 {skill}
               </button>
@@ -210,7 +216,7 @@ export default function Home() {
             {stack2.map((skill, index) => (
               <button
                 key={index}
-                className="px-4 py-2 text-md text-gray-300 shadow-sm shadow-slate-600 rounded-lg border border-1 border-slate-800 bg-gradient-to-tr from-slate-600 via-slate-950 to-slate-800 whitespace-nowrap"
+                className="px-2 md:px-4 py-2 md:py-2 text-sm md:text-md text-gray-300 shadow-sm shadow-slate-600 rounded-lg border border-1 border-slate-800 bg-gradient-to-tr from-slate-600 via-slate-950 to-slate-800 whitespace-nowrap"
               >
                 {skill}
               </button>
@@ -220,7 +226,7 @@ export default function Home() {
             {stack3.map((skill, index) => (
               <button
                 key={index}
-                className="px-4 py-2 text-md text-gray-300 shadow-sm shadow-slate-600 rounded-lg border border-1 border-slate-800 bg-gradient-to-tr from-slate-600 via-slate-950 to-slate-800 whitespace-nowrap"
+                className="px-2 md:px-4 py-2 md:py-2 text-sm md:text-md text-gray-300 shadow-sm shadow-slate-600 rounded-lg border border-1 border-slate-800 bg-gradient-to-tr from-slate-600 via-slate-950 to-slate-800 whitespace-nowrap"
               >
                 {skill}
               </button>
@@ -228,28 +234,29 @@ export default function Home() {
           </div>
           <div className="absolute top-0 right-0 h-full w-10 bg-gradient-to-l from-[#0A0F19] to-transparent pointer-events-none z-10" />
         </div>
-        <p className="text-xl text-gray-400 w-[45%] text-center">
-          My journey began simple - creating a website for a friends business.
-          This project was the kickoff of my developer career. Over the last
-          years I have learned much about the web with it's different languages.
+        <p className="text-xl text-gray-400 sm:w-[90%] md:w-[45%] text-center">
+          Meine Reise begann einfach – mit der Erstellung einer Website für das
+          Unternehmen eines Freundes. Dieses Projekt war der Startschuss für
+          meine Entwicklerkarriere. In den letzten Jahren habe ich viel über das
+          Web und seine verschiedenen Sprachen gelernt.
         </p>
       </section>
       {/* portfolio */}
       <section
         id="portfolio"
-        className="z-20 flex flex-col w-screen h-screen justify-center items-center"
+        className="z-20 pb-8 flex mb-32 md:mb-0 flex-col md:w-screen md:h-screenjustify-center items-center"
       >
         <p className="mb-8 text-xl text-gray-400"> &#127773; Portfolio</p>
-        <h3 className="mb-8 text-7xl font-bold">
+        <h3 className="mb-8 text-center text-4xl md:text-7xl font-bold">
           <span className="text-transparent bg-clip-text bg-gradient-to-tr from-slate-700 to-white">
-            Quality and
+            Qualität und
           </span>
           <span className="font-bold bg-clip-text text-transparent bg-gradient-to-b from-purple-200  via-fuchsia-500 to-purple-950">
             {' '}
-            Relation
+            Beziehung
           </span>
         </h3>
-        <div className="flex gap-5 p-5 mb-10">
+        <div className="flex flex-wrap gap-5 p-5 mb-10">
           {/* card1 */}
           <div className="relative w-[330px] hover:scale-[102%] transition-all text-slate-400 border border-1 rounded-xl border-black shadow-sm shadow-purple-800">
             <Link
@@ -278,8 +285,8 @@ export default function Home() {
                 </h4>
               </Link>
               <p className="mb-5">
-                A nextjs web application for virtual Assistence from Germany. My
-                first full-stack experience.
+                Eine next.js App für virtuelle Assistenten:innen aus Deutschland
+                und zugleich meine erste Full-Stack Erfahrung.
                 <br />
               </p>
               <p className="text-sm">
@@ -315,8 +322,8 @@ export default function Home() {
                 </h4>
               </Link>
               <p className="mb-5">
-                A personal portfolio website, showing everything about myself,
-                my services and my complete portfolio.
+                Ein persönliche Website über mich, meinen Angebot und einer
+                Übersicht zu all meinen Projekten.
                 <br />
               </p>
               <p className="text-sm">#Breakdance #Wordpress #SEO #Blog</p>
@@ -325,14 +332,14 @@ export default function Home() {
           {/* card3 */}
           <div className="relative w-[330px] hover:scale-[102%] transition-all text-slate-400 border border-1 rounded-xl border-black shadow-sm shadow-purple-800 ">
             <Link
-              href="https://www.portfolio-gamehub.tobischmid.com/"
+              href="https://www.herzensstark.life"
               target="_blank"
               className="absolute w-full h-full top-0 right-0 z-10"
             />
             <div className="w-full">
               <Image
-                src={picReact}
-                alt="portfolio react app"
+                src={picHerzensstark}
+                alt="herzensstark.life"
                 width={330}
                 height={100}
                 className="rounded-t-xl"
@@ -340,30 +347,38 @@ export default function Home() {
             </div>
             <div className="p-3 bg-gradient-to-tr from-gray-900 via-gray-950 to-transparent rounded-b-lg">
               <Link
-                href="https://www.portfolio-gamehub.tobischmid.com/"
+                href="https://www.herzensstark.life/"
                 target="_blank"
-                aria-label="go to portfolio-gamehub.tobischmid.com"
+                aria-label="go to herzensstark.life"
                 className="z-20"
               >
                 <h4 className="text-xl mb-3 underline underline-offset-4 decoration-purple-950 hover:decoration-purple-800 z-30">
-                  gamehub.tobischmid.com
+                  herzensstark.life
                 </h4>
               </Link>
               <p className="mb-5">
-                My first React project. Taught by Mosh Hamedani, I learned all
-                the basics about react.
+                Dein Schritt in die Selbstständigkeit - unterstützt mit einer
+                professionellen Website.
                 <br />
               </p>
-              <p className="text-sm">#React #Tanstack #API</p>
+              <p className="text-sm">#Breakdance #Wordpress #Webdesign</p>
             </div>
           </div>
         </div>
-        <p className="text-xl text-gray-400 w-[61%] text-center">
-          I am not only delivering high quality websites, I am also the go to
-          person for my clients. Disscussing problems, creating solutions and
-          taking care of the realization. My clients enjoying this.
+        <p className="text-xl text-gray-400 sm:w-[90%] md:w-[61%] text-center">
+          Ich entwickle nicht nur hochwertige Websites, sondern bin auch die
+          erste Anlaufstelle für meine Kunden. Gemeinsam besprechen wir
+          Probleme, entwickeln Strategien und kümmern uns um die Umsetzung.
+          Besonders kleine Unternehmen, die oft alleine vor Herausforderungen
+          stehen, schätzen diesen Service sehr.
         </p>
       </section>
+      <footer className="flex gap-5 items-center justify-center text-sm text-gray-500 mt-20 mb-3 ms-0md:ms-16 ">
+        <Link href="https://www.tobischmid.com/data-protection/">
+          Datenschutz
+        </Link>
+        <Link href="https://www.tobischmid.com/impressum/">Impressum</Link>
+      </footer>
     </div>
   );
 }
