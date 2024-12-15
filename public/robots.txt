@@ -1,0 +1,12 @@
+# Block crawlers
+
+# Block a specific crawler 
+User-agent: BadBot
+Disallow: /
+
+
+# Allow crawlers
+User-agent: *
+Allow: /
+
+Sitemap: https://developer.tobischmid.com/sitemap.xml
