@@ -53,7 +53,7 @@ export default function Home() {
         className="z-20 mb-32 sm:mb-0 mt-24 sm:-mt-10 relative flex flex-col sm:w-screen sm:h-screen justify-center items-center"
       >
         <p className="mb-8 text-xl text-gray-400"> &#128075; Willkommen</p>
-        <h1 className="mb-8 text-center md:text-start text-4xl md:text-7xl font-bold mx-auto md:pl-10 h-[80px] md:h-[0px]">
+        <h1 className="mb-8 text-center md:text-start text-4xl md:text-7xl font-bold mx-auto md:pl-10 h-[80px] md:h-auto">
           <span className="text-transparent bg-clip-text bg-gradient-to-tr from-slate-700 to-white">
             Hi, ich bin{' '}
             <span className="md:hidden">
@@ -161,6 +161,7 @@ export default function Home() {
               height="30px"
               viewBox="0 0 1024 1024"
               xmlns="http://www.w3.org/2000/svg"
+              aria-label="send email to Tobias Schmid"
               className=" stroke-slate-400 hover:stroke-purple-800 hover:scale-110 fill-slate-400 hover:fill-purple-800"
             >
               <path
@@ -200,7 +201,7 @@ export default function Home() {
           </span>
         </h2>
 
-        <div className="p-5 rounded-2xl shadow-sm shadow-purple-800 flex relative flex-col gap-5 overflow-hidden mb-10 items-center w-full max-w-screen-md bg-transparent">
+        <div className="p-5 rounded-2xl shadow-sm shadow-purple-800 flex relative flex-col gap-4 overflow-hidden mb-10 items-center w-full max-w-screen-md bg-transparent">
           <div className="absolute top-0 left-0 h-full w-32 bg-gradient-to-r from-[#0A0F19] to-transparent pointer-events-none z-10" />
           <div className="relative flex gap-3 animate-flowRight">
             {stack1.map((skill, index) => (
@@ -262,6 +263,7 @@ export default function Home() {
             <Link
               href="https://fernschicht.de"
               target="_blank"
+              aria-label="go to fernschicht.de"
               className="absolute w-full h-full top-0 right-0 z-10"
             />
             <div className="w-full">
@@ -300,6 +302,7 @@ export default function Home() {
               href="https://tobischmid.com"
               target="_blank"
               className="absolute w-full h-full top-0 right-0 z-10"
+              aria-label="go to tobischmid.com"
             />
             <div className="w-full">
               <Image
@@ -335,6 +338,7 @@ export default function Home() {
               href="https://www.herzensstark.life"
               target="_blank"
               className="absolute w-full h-full top-0 right-0 z-10"
+              aria-label="go to herzensstark.life"
             />
             <div className="w-full">
               <Image
@@ -374,10 +378,20 @@ export default function Home() {
         </p>
       </section>
       <footer className="flex gap-5 items-center justify-center text-sm text-gray-500 mt-20 mb-3 ms-0md:ms-16 ">
-        <Link href="https://www.tobischmid.com/data-protection/">
+        <Link
+          href="https://www.tobischmid.com/data-protection/"
+          target="_blank"
+          aria-label="go to data policy"
+        >
           Datenschutz
         </Link>
-        <Link href="https://www.tobischmid.com/impressum/">Impressum</Link>
+        <Link
+          href="https://www.tobischmid.com/impressum/"
+          target="_blank"
+          aria-label="go to impressum"
+        >
+          Impressum
+        </Link>
       </footer>
     </div>
   );

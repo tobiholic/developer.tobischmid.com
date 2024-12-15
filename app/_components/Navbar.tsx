@@ -30,39 +30,53 @@ const Navbar = () => {
   return (
     <nav className="fixed z-30 flex justify-center md:justify-end items-center pe-10 w-full py-1 align-middle md:mt-1 transition-all">
       <ul className="inline-flex gap-5 font-semibold py-2 px-4 rounded-3xl shadow-sm shadow-slate-800 border border-1 border-solid border-slate-700 text-slate-400 bg-slate-950 bg-opacity-25 backdrop-blur-md">
-        <Link href="#welcome" className="cursor-pointer">
-          <li
-            className={`${
-              activeSection === 'welcome'
-                ? 'underline decoration-purple-700 underline-offset-4'
-                : ''
-            }`}
+        <li
+          className={`${
+            activeSection === 'welcome'
+              ? 'underline decoration-purple-700 underline-offset-4'
+              : ''
+          }`}
+        >
+          <Link
+            href="#welcome"
+            className="cursor-pointer"
+            aria-label="go to welcome section"
           >
             Willkommen
-          </li>
-        </Link>
-        <Link href="#stack" className="cursor-pointer">
-          <li
-            className={`${
-              activeSection === 'stack'
-                ? 'underline decoration-purple-700 underline-offset-4'
-                : ''
-            }`}
+          </Link>
+        </li>
+
+        <li
+          className={`${
+            activeSection === 'stack'
+              ? 'underline decoration-purple-700 underline-offset-4'
+              : ''
+          }`}
+        >
+          <Link
+            href="#stack"
+            className="cursor-pointer"
+            aria-label="go to section stack"
           >
             Stack
-          </li>
-        </Link>
-        <Link href="#portfolio" className="cursor-pointer">
-          <li
-            className={`${
-              activeSection === 'portfolio'
-                ? 'underline decoration-purple-700 underline-offset-4'
-                : ''
-            }`}
+          </Link>
+        </li>
+
+        <li
+          className={`${
+            activeSection === 'portfolio'
+              ? 'underline decoration-purple-700 underline-offset-4'
+              : ''
+          }`}
+        >
+          <Link
+            href="#portfolio"
+            className="cursor-pointer"
+            aria-label="go to section portfolio"
           >
             Portfolio
-          </li>
-        </Link>
+          </Link>
+        </li>
       </ul>
     </nav>
   );
