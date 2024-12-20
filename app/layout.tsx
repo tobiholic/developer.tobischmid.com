@@ -35,15 +35,15 @@ export const metadata: Metadata = {
     type: 'website',
     siteName: 'Tobias Schmid | Freelancer Webdesign & -entwicklung',
     url: 'https://tobischmid.com',
-    title: 'Dein Freelancer für Webentwicklung | Tobias Schmid',
+    title: 'Freelancer für Webdesign und Frontend-Entwicklung | Tobias Schmid',
     description:
-      'Du suchst die richtige Unterstützung, um deinen Online Auftritt professionell zu gestalten? Tobias Schmid hi',
+      'Die flexible Unterstützung für Online Marketing, Webdesign und -entwicklung. Vereinbare jetzt ein kostenloses Erstgespräch um über dein Projekt zu sprechen.',
     images: [
       {
         url: 'https://www.tobischmid.com/wp-content/uploads/2024/12/tobischmid-socialImage.webp',
         width: 1200,
         height: 630,
-        alt: 'Tobias Schmid | Dein Freelancer für Webentwicklung und Online Marketing ',
+        alt: 'Tobias Schmid | Dein Freelancer für Webentwicklung und Online Marketing',
       },
     ],
   },
@@ -57,7 +57,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className="selection:bg-purple-500 selection:bg-opacity-20 scroll-smooth"
+      className="selection:bg-sky-500 selection:bg-opacity-20 scroll-smooth"
     >
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

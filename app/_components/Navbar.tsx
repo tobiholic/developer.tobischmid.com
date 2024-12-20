@@ -33,7 +33,7 @@ const Navbar = () => {
         <li
           className={`${
             activeSection === 'welcome'
-              ? 'underline decoration-purple-700 underline-offset-4'
+              ? 'underline decoration-sky-700 underline-offset-4'
               : ''
           }`}
         >
@@ -45,11 +45,10 @@ const Navbar = () => {
             Willkommen
           </Link>
         </li>
-
         <li
           className={`${
             activeSection === 'stack'
-              ? 'underline decoration-purple-700 underline-offset-4'
+              ? 'underline decoration-sky-700 underline-offset-4'
               : ''
           }`}
         >
@@ -61,11 +60,10 @@ const Navbar = () => {
             Stack
           </Link>
         </li>
-
         <li
           className={`${
             activeSection === 'portfolio'
-              ? 'underline decoration-purple-700 underline-offset-4'
+              ? 'underline decoration-sky-700 underline-offset-4'
               : ''
           }`}
         >
