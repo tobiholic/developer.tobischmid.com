@@ -49,7 +49,7 @@ export default function Home() {
       {/* middle left */}
       <div className="absolute w-[800px] h-[1000px] top-1/2 -left-[1100px] sm:w-[1440px] sm:h-[1440px] max-w-full -translate-y-1/2 rounded-[50%] opacity-20 bg-sky-300 select-none pointer-events-none blur-[250px] transform-gpu z-50" />
       {/* light bottom */}
-      <div className="absolute w-[1000px] sm:w-[1440px] h-[1500px] sm:h-[1440px] -bottom-[730px] max-w-full sm:-bottom-[1200px] left-1/2 rounded-[50%] opacity-20 -translate-x-1/2 bg-sky-300 select-none pointer-events-none blur-[250px] transform-gpu z-50" />
+      <div className="absolute w-[1000px] sm:w-[1440px] h-[1500px] sm:h-[1440px] -bottom-[730px] max-w-full sm:-bottom-[1200px] left-[60%] rounded-[50%] opacity-20 -translate-x-[20%] bg-sky-300 select-none pointer-events-none blur-[250px] transform-gpu z-50" />
 
       <div className="mt-4">
         <Navbar />
@@ -87,7 +87,7 @@ export default function Home() {
             aria-label="contact freelancer Tobias Schmid"
           >
             <button className="px-4 py-3 font-bold text-slate-300 rounded-2xl border border-1 border-sky-800 hover:scale-105 transition-all bg-gradient-to-tr from-sky-600 via-sky-700 to-sky-800">
-              Get in touch
+              Nachricht
             </button>
           </Link>
           <Link
@@ -96,7 +96,7 @@ export default function Home() {
             aria-label="CV Tobias Schmid"
           >
             <button className="px-4 py-3 text-sky-600 font-bold rounded-2xl border border-1 border-solid border-sky-500 bg-sky-800 bg-opacity-10 hover:scale-105 transition-all">
-              Download CV
+              Lebenslauf
             </button>
           </Link>
         </div>
@@ -205,7 +205,7 @@ export default function Home() {
         </h2>
 
         <div className="p-5 rounded-2xl shadow-sm shadow-sky-800 flex relative flex-col gap-4 overflow-hidden mb-10 items-center w-full max-w-screen-md bg-transparent">
-          <div className="absolute top-0 left-0 h-full w-32 bg-gradient-to-r from-[#0A0F19] to-transparent pointer-events-none z-10" />
+          <div className="absolute top-0 left-0 h-full w-3 bg-gradient-to-r from-[#0C1217] to-transparent pointer-events-none z-10" />
           <div className="relative flex gap-3 animate-flowRight">
             {stack1.map((skill, index) => (
               <button
