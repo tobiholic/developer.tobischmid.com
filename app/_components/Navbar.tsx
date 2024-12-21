@@ -75,6 +75,21 @@ const Navbar = () => {
             Portfolio
           </Link>
         </li>
+        <li
+          className={`${
+            activeSection === 'feedback'
+              ? 'underline decoration-sky-700 underline-offset-4'
+              : ''
+          }`}
+        >
+          <Link
+            href="#feedback"
+            className="cursor-pointer"
+            aria-label="go to section stimmen"
+          >
+            Stimmen
+          </Link>
+        </li>
       </ul>
     </nav>
   );

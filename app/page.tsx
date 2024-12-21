@@ -45,19 +45,18 @@ export default function Home() {
   return (
     <div className="px-5 md:p-0 bg-gradient-to-tl from-black to-gray-900 relative overflow-hidden bg-grid-squares">
       {/* light top */}
-      <div className="absolute w-[1000px] h-[1500px] -top-[730px] sm:w-[1440px] sm:h-[1440px] max-w-full sm:-top-[1200px] left-1/2 rounded-[50%] opacity-20 -translate-x-1/2 bg-sky-300 select-none pointer-events-none blur-[250px] transform-gpu z-50" />
+      <div className="absolute w-[1000px] h-[1500px] -top-[730px] sm:w-[1440px] sm:h-[1600px] max-w-full sm:-top-[1200px] left-1/2 rounded-[50%] opacity-20 -translate-x-1/2 bg-sky-300 select-none pointer-events-none blur-[250px] transform-gpu z-50" />
       {/* middle left */}
-      <div className="absolute w-[800px] h-[1000px] top-1/2 -left-[1100px] sm:w-[1440px] sm:h-[1440px] max-w-full -translate-y-1/2 rounded-[50%] opacity-20 bg-sky-300 select-none pointer-events-none blur-[250px] transform-gpu z-50" />
+      <div className="absolute w-[1000px] h-[1000px] top-1/2 -left-[1100px] sm:w-[1800px] sm:h-[1440px] max-w-full -translate-y-1/2 rounded-[50%] opacity-20 bg-sky-300 select-none pointer-events-none blur-[250px] transform-gpu z-50" />
       {/* light bottom */}
-      <div className="absolute w-[1000px] sm:w-[1440px] h-[1500px] sm:h-[1440px] -bottom-[730px] max-w-full sm:-bottom-[1200px] left-[60%] rounded-[50%] opacity-20 -translate-x-[20%] bg-sky-300 select-none pointer-events-none blur-[250px] transform-gpu z-50" />
-
+      <div className="absolute w-[1000px] sm:w-[1440px] h-[1500px] sm:h-[1200px] -bottom-[260px] max-w-full sm:-bottom-[600px] left-[65%] rounded-[50%] opacity-20 -translate-x-[20%] bg-sky-300 select-none pointer-events-none blur-[250px] transform-gpu z-50" />
       <div className="mt-4">
         <Navbar />
       </div>
       {/* sections */}
       <section
         id="welcome"
-        className="z-20 mb-32 sm:mb-0 mt-24 sm:-mt-10 relative flex flex-col sm:w-screen sm:h-screen justify-center items-center  bg-opacity-95"
+        className="z-20 mb-32 sm:mb-0 mt-24 sm:-mt-10 relative flex flex-col sm:w-screen sm:h-screen justify-center items-center bg-opacity-95"
       >
         <p className="mb-8 text-xl text-gray-400"> &#128075; Willkommen</p>
         <h1 className="mb-8 text-center md:text-start text-4xl md:text-7xl font-bold mx-auto md:pl-10 h-[80px] md:h-auto">
@@ -194,7 +193,7 @@ export default function Home() {
         className="z-20 flex flex-col mb-32 md:mb-0 md:w-screen md:h-screen justify-center items-center"
       >
         <p className="mb-8 text-xl text-gray-400"> &#128195; The stack</p>
-        <h2 className="mb-8 text-center text-4xl md:text-7xl font-bold">
+        <h3 className="mb-8 text-center text-4xl md:text-7xl font-bold">
           <span className="text-transparent bg-clip-text bg-gradient-to-tr from-slate-700 to-white">
             Lernen und
           </span>
@@ -202,8 +201,7 @@ export default function Home() {
             {' '}
             Entwickeln
           </span>
-        </h2>
-
+        </h3>
         <div className="p-5 rounded-2xl shadow-sm shadow-sky-800 flex relative flex-col gap-4 overflow-hidden mb-10 items-center w-full max-w-screen-md bg-transparent">
           <div className="absolute top-0 left-0 h-full w-3 bg-gradient-to-r from-[#0C1217] to-transparent pointer-events-none z-10" />
           <div className="relative flex gap-3 animate-flowRight">
@@ -247,18 +245,18 @@ export default function Home() {
       {/* portfolio */}
       <section
         id="portfolio"
-        className="z-20 pb-8 flex mb-32 md:mb-0 flex-col md:w-screen md:h-screenjustify-center items-center"
+        className="z-20 pb-8 flex mb-32 md:mb-0 flex-col md:h-screen md:w-screen justify-center items-center"
       >
         <p className="mb-8 text-xl text-gray-400"> &#127773; Portfolio</p>
-        <h3 className="mb-8 text-center text-4xl md:text-7xl font-bold">
+        <h4 className="mb-8 text-center text-4xl md:text-7xl font-bold">
           <span className="text-transparent bg-clip-text bg-gradient-to-tr from-slate-700 to-white">
             Qualität und
           </span>
           <span className="font-bold bg-clip-text text-transparent bg-gradient-to-b from-purple-200 via-sky-500 to-sky-950">
             {' '}
-            Beziehung
+            Service
           </span>
-        </h3>
+        </h4>
         <div className="flex flex-wrap gap-5 p-5 mb-10">
           {/* card1 */}
           <div className="relative w-[330px] hover:scale-[102%] transition-all text-slate-400 border border-1 rounded-xl border-black shadow-sm shadow-sky-800">
@@ -379,7 +377,187 @@ export default function Home() {
           Herausforderungen stehen, schätzen diesen Service sehr.
         </p>
       </section>
-      <footer className="flex gap-5 items-center justify-center text-sm text-gray-500 mt-20 mb-3">
+      {/* customer feedback */}
+      <section
+        id="feedback"
+        className="z-20 mt-36 pb-8 flex mb-32 md:mb-0 flex-col justify-center items-center"
+      >
+        <div className="flex flex-row items-center mb-7">
+          <Image
+            alt="im Interior"
+            src="/schmelzer-logo.png"
+            width={35}
+            height={35}
+            className="bg-white rounded-full border hover:border-1 border-black hover:border-sky-600 hover:-translate-y-1 hover:z-30"
+          />
+          <Image
+            alt="logo lekkerdivers"
+            src="/lekkerdivers-logo.png"
+            width={35}
+            height={35}
+            className="-ml-3 bg-white rounded-full border hover:border-1 border-black hover:border-sky-600 hover:-translate-y-1 hover:z-30"
+          />
+          <Image
+            alt="logo lekkerdivers"
+            src="/ecomax-bau-logo.png"
+            width={35}
+            height={35}
+            className="-ml-3 bg-white rounded-full border hover:border-1 border-black hover:border-sky-600 hover:-translate-y-1 hover:z-30"
+          />
+          <Image
+            alt="logo lekkerdivers"
+            src="/orbium-logo.png"
+            width={35}
+            height={35}
+            className="-ml-3 bg-white rounded-full border hover:border-1 border-black hover:border-sky-600 hover:-translate-y-1 hover:z-30"
+          />
+          <p className="ml-2 text-sm text-gray-400">trusted by +10 companies</p>
+        </div>
+        <h5 className="mb-12 text-center text-4xl md:text-7xl font-bold">
+          <span className="text-transparent bg-clip-text bg-gradient-to-tr from-slate-700 to-white">
+            Feedback und
+          </span>
+          <span className="font-bold bg-clip-text text-transparent bg-gradient-to-b from-purple-200 via-sky-500 to-sky-950">
+            {' '}
+            Wertschätzung
+          </span>
+        </h5>
+        <div className="flex flex-col md:flex-row gap-5 md:px-60">
+          {/* col left */}
+          <div className="flex gap-5 flex-col w-full md:w-1/2">
+            {/* card 1 */}
+            <div className="rounded-2xl shadow-sm shadow-sky-500 p-5 leading-7 text-slate-400">
+              Herr Schmid hat unsere Erwartungen in jeder Hinsicht mehr als
+              erfüllt. Er ist zuverlässig, arbeitet schnell und besitzt
+              umfassendes Know-how. Seine Kommunikation ist klar und effektiv.
+              Vielen Dank für die hervorragende und zielführende Zusammenarbeit.
+              Gerne wieder. Beste Grüße!
+              <div className="flex flex-row gap-2 mt-5">
+                <Image
+                  src="/im-interior-logo.png"
+                  alt="logo im interior Berlin"
+                  width={45}
+                  height={45}
+                  className="bg-sky-100 rounded-full"
+                  placeholder="empty"
+                />
+                <div>
+                  <p className="text-slate-200">Isabella K. Modrzynski</p>
+                  <p className="text-slate-200 text-sm">
+                    CEO IM INTERIOR Design Hub Berlin
+                  </p>
+                </div>
+              </div>
+            </div>{' '}
+            {/* card 2 */}
+            <div className="rounded-2xl shadow-sm shadow-sky-500 p-5 leading-7 text-slate-400">
+              Herr Schmid geht sehr individuell auf seine Kunden und deren
+              Wünsche ein. Ein großes Plus ist, dass er sich wirklich Gedanken
+              macht, was die beste Lösung im Kundensinn ist. Ich habe in der
+              Vergangenheit mit vielen Marketingagenturen zusammengearbeitet und
+              selten so eine professionelle Art und Weise erlebt. Herr Schmid
+              denkt mit und nimmt auf diese Weise viel Arbeit ab.
+              <div className="flex flex-row gap-2 mt-5">
+                <Image
+                  src="/schmelzer-logo.png"
+                  alt="logo lekkerdivers"
+                  width={45}
+                  height={45}
+                  className="bg-sky-100 rounded-full"
+                  placeholder="empty"
+                />
+                <div>
+                  <p className="text-slate-200">Daniela Schmelzer</p>
+                  <p className="text-slate-200 text-sm">
+                    Selbstbehauptungs- und Resilienztrainerin
+                  </p>
+                </div>
+              </div>
+            </div>{' '}
+            {/* card 3 */}
+            <div className="rounded-2xl shadow-sm shadow-sky-500 p-5 leading-7 text-slate-400">
+              Mit Tobias Schmid an meiner Seite fühle ich mich stets gut
+              betreut. Sein positiver Elan und seine Freude an der
+              Zusammenarbeit ist sogar über den Bildschirm spürbar. Was mir
+              besonders gefällt? Tobias Schmid bleibt einerseits zäh an
+              längerfristigen Aufgaben und ist andererseits offen für neue
+              Lernprojekte. Um meine digitale Präsenz in verschiedenen Kanälen
+              auszubauen, bin ich froh mit Tobias Schmid zu arbeiten und kann
+              Herrn Schmid als Freelancer für Marketing sehr empfehlen.
+              <div className="flex flex-row gap-2 mt-5">
+                <Image
+                  src="/orbium-logo.png"
+                  alt="logo lekkerdivers"
+                  width={45}
+                  height={45}
+                  className="bg-sky-100 rounded-full"
+                  priority
+                  placeholder="empty"
+                />
+                <div>
+                  <p className="text-slate-200">Harald Groß</p>
+                  <p className="text-slate-200 text-sm">
+                    Didaktik-Trainer, Orbium Seminare Berlin
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* col right */}
+          <div className="flex flex-col gap-5 w-full md:w-1/2">
+            {/* card 4 */}
+            <div className="rounded-2xl shadow-sm shadow-sky-500 p-5 leading-7 text-slate-400">
+              Tobias built our website from scratch and we could not be happier
+              with the result. He did a great job on how it looks and it
+              functions perfectly. The website means a lot to our growing
+              business in terms of sales and presentation and we can notice it
+              is success in the amount of bookings received. Communication and
+              working together with Tobias is very easy, clear and pleasant. He
+              is still maintaining our website until today, gives us insights
+              and helps us to improve our performance.
+              <div className="flex flex-row gap-2 mt-5">
+                <Image
+                  src="/lekkerdivers-logo.png"
+                  alt="logo lekkerdivers"
+                  width={45}
+                  height={45}
+                  className="bg-sky-100 rounded-full"
+                />
+                <div>
+                  <p className="text-slate-200">Nicole Peters</p>
+                  <p className="text-slate-200 text-sm">
+                    Owner and Manager, lekkerdivers
+                  </p>
+                </div>
+              </div>
+            </div>
+            {/* card 5 */}
+            <div className="rounded-2xl shadow-sm shadow-sky-500 p-5 leading-7 text-slate-400">
+              Tobias supported the elho online and consumer care team for
+              several months in a very flexible and highly qualitative way. He
+              helped to prepare the launch of our German webshop. Among others
+              by translating and optimizing German texts and he took care of all
+              the consumer questions related to our new German webshop. Elho is
+              based in the Netherlands, Tobias worked from a distance; from
+              Germany and from Asia. We did not experience a difference.
+              <div className="flex flex-row gap-2 mt-5">
+                <Image
+                  src="/elho-logo.png"
+                  alt="logo elho b.V."
+                  width={45}
+                  height={45}
+                  className="bg-sky-100 rounded-full"
+                />
+                <div>
+                  <p className="text-slate-200">Marc Tomassen</p>
+                  <p className="text-slate-200 text-sm">Manager Online, elho</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer className="flex gap-5 items-center justify-center text-sm text-gray-500 mt-20 mb-5">
         <Link
           href="https://www.tobischmid.com/data-protection/"
           target="_blank"
