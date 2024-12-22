@@ -468,8 +468,11 @@ export default function Home() {
                 />
                 <div>
                   <p className="text-slate-200">Daniela Schmelzer</p>
-                  <p className="text-slate-200 text-sm">
+                  <p className="text-slate-200 text-sm hidden sm:block">
                     Selbstbehauptungs- und Resilienztrainerin
+                  </p>
+                  <p className="text-slate-200 text-sm sm:hidden">
+                    Selbstbehauptungstrainerin
                   </p>
                 </div>
               </div>

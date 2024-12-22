@@ -59,7 +59,11 @@ export default function RootLayout({
       lang="en"
       className="selection:bg-sky-500 selection:bg-opacity-20 scroll-smooth"
     >
-      <body>{children}</body>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
