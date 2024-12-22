@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import Link from 'next/link';
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState<string>('welcome');
@@ -37,13 +36,13 @@ const Navbar = () => {
               : ''
           }`}
         >
-          <Link
+          <a
             href="#welcome"
             className="cursor-pointer"
             aria-label="go to welcome section"
           >
             Willkommen
-          </Link>
+          </a>
         </li>
         <li
           className={`${
@@ -52,13 +51,13 @@ const Navbar = () => {
               : ''
           }`}
         >
-          <Link
+          <a
             href="#stack"
             className="cursor-pointer"
             aria-label="go to section stack"
           >
             Stack
-          </Link>
+          </a>
         </li>
         <li
           className={`${
@@ -67,13 +66,13 @@ const Navbar = () => {
               : ''
           }`}
         >
-          <Link
+          <a
             href="#portfolio"
             className="cursor-pointer"
             aria-label="go to section portfolio"
           >
             Portfolio
-          </Link>
+          </a>
         </li>
         <li
           className={`${
@@ -82,13 +81,13 @@ const Navbar = () => {
               : ''
           }`}
         >
-          <Link
+          <a
             href="#feedback"
             className="cursor-pointer"
-            aria-label="go to section stimmen"
+            aria-label="go to section feedback"
           >
             Stimmen
-          </Link>
+          </a>
         </li>
       </ul>
     </nav>

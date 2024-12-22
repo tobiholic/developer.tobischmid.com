@@ -49,14 +49,14 @@ export default function Home() {
       {/* middle left */}
       <div className="absolute w-[1000px] h-[1000px] top-1/2 -left-[1100px] sm:w-[1800px] sm:h-[1440px] max-w-full -translate-y-1/2 rounded-[50%] opacity-20 bg-sky-300 select-none pointer-events-none blur-[250px] transform-gpu z-50" />
       {/* light bottom */}
-      <div className="absolute w-[1000px] sm:w-[1440px] h-[1500px] sm:h-[1200px] -bottom-[260px] max-w-full sm:-bottom-[600px] left-[65%] rounded-[50%] opacity-20 -translate-x-[20%] bg-sky-300 select-none pointer-events-none blur-[250px] transform-gpu z-50" />
+      <div className="absolute w-[1000px] sm:w-[1440px] h-[1500px] sm:h-[600px] bottom-[0px]  max-w-full left-[65%] rounded-[50%] opacity-25 -translate-x-[25%] bg-sky-300 select-none pointer-events-none blur-[250px] transform-gpu z-50 overflow-hidden" />
       <div className="mt-4">
         <Navbar />
       </div>
-      {/* sections */}
+      {/* about */}
       <section
         id="welcome"
-        className="z-20 mb-32 sm:mb-0 mt-24 sm:-mt-10 relative flex flex-col sm:w-screen sm:h-screen justify-center items-center bg-opacity-95"
+        className="flex flex-col relative z-20 sm:mb-0 mt-5 sm:-mt-5 justify-center items-center min-h-screen"
       >
         <p className="mb-8 text-xl text-gray-400"> &#128075; Willkommen</p>
         <h1 className="mb-8 text-center md:text-start text-4xl md:text-7xl font-bold mx-auto md:pl-10 h-[80px] md:h-auto">
@@ -190,7 +190,7 @@ export default function Home() {
       {/* stack */}
       <section
         id="stack"
-        className="z-20 flex flex-col mb-32 md:mb-0 md:w-screen md:h-screen justify-center items-center"
+        className="z-20 flex flex-col md:mb-0 py-auto min-h-screen justify-center items-center"
       >
         <p className="mb-8 text-xl text-gray-400"> &#128195; The stack</p>
         <h3 className="mb-8 text-center text-4xl md:text-7xl font-bold">
@@ -245,7 +245,7 @@ export default function Home() {
       {/* portfolio */}
       <section
         id="portfolio"
-        className="z-20 pb-8 flex mb-32 md:mb-0 flex-col md:h-screen md:w-screen justify-center items-center"
+        className="z-20 pb-8 pt-20 flex mb-32 md:mb-0 flex-col min-h-screen justify-center items-center"
       >
         <p className="mb-8 text-xl text-gray-400"> &#127773; Portfolio</p>
         <h4 className="mb-8 text-center text-4xl md:text-7xl font-bold">
@@ -380,7 +380,7 @@ export default function Home() {
       {/* customer feedback */}
       <section
         id="feedback"
-        className="z-20 mt-36 pb-8 flex mb-32 md:mb-0 flex-col justify-center items-center"
+        className="z-20 mt-36 pb-8 pt-20 flex md:mb-0 flex-col justify-center items-center m-h-screen "
       >
         <div className="flex flex-row items-center mb-7">
           <Image
