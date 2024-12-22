@@ -275,7 +275,7 @@ export default function Home() {
                 className="rounded-t-xl"
               />
             </div>
-            <div className="p-3 bg-gradient-to-tr from-gray-900 via-gray-950 to-transparent rounded-b-lg">
+            <div className="p-3 backdrop-blur-lg to-transparent rounded-b-lg">
               <Link
                 href="https://fernschicht.de"
                 target="_blank"
@@ -313,7 +313,7 @@ export default function Home() {
                 className="rounded-t-xl"
               />
             </div>
-            <div className="p-3 bg-gradient-to-tr from-gray-900 via-gray-950 to-transparent rounded-b-lg">
+            <div className="p-3 backdrop-blur-lg to-transparent rounded-b-lg">
               <Link
                 href="https://www.tobischmid.com"
                 target="_blank"
@@ -349,7 +349,7 @@ export default function Home() {
                 className="rounded-t-xl"
               />
             </div>
-            <div className="p-3 bg-gradient-to-tr from-gray-900 via-gray-950 to-transparent rounded-b-lg">
+            <div className="p-3 backdrop-blur-lg to-transparent rounded-b-lg">
               <Link
                 href="https://www.herzensstark.life/"
                 target="_blank"
@@ -380,7 +380,7 @@ export default function Home() {
       {/* customer feedback */}
       <section
         id="feedback"
-        className="z-20 mt-36 pb-8 pt-20 flex md:mb-0 flex-col justify-center items-center m-h-screen "
+        className="z-20 mt-36 pb-8 pt-20 flex md:mb-0 flex-col justify-center items-center m-h-screen"
       >
         <div className="flex flex-row items-center mb-7">
           <Image
@@ -426,7 +426,7 @@ export default function Home() {
           {/* col left */}
           <div className="flex gap-5 flex-col w-full md:w-1/2">
             {/* card 1 */}
-            <div className="rounded-2xl shadow-sm shadow-sky-500 p-5 leading-7 text-slate-400">
+            <div className="rounded-2xl shadow-sm shadow-sky-500 p-5 leading-7 text-slate-400 backdrop-blur-sm">
               Herr Schmid hat unsere Erwartungen in jeder Hinsicht mehr als
               erfüllt. Er ist zuverlässig, arbeitet schnell und besitzt
               umfassendes Know-how. Seine Kommunikation ist klar und effektiv.
@@ -450,7 +450,7 @@ export default function Home() {
               </div>
             </div>{' '}
             {/* card 2 */}
-            <div className="rounded-2xl shadow-sm shadow-sky-500 p-5 leading-7 text-slate-400">
+            <div className="rounded-2xl shadow-sm shadow-sky-500 p-5 leading-7 text-slate-400 backdrop-blur-sm">
               Herr Schmid geht sehr individuell auf seine Kunden und deren
               Wünsche ein. Ein großes Plus ist, dass er sich wirklich Gedanken
               macht, was die beste Lösung im Kundensinn ist. Ich habe in der
@@ -478,7 +478,7 @@ export default function Home() {
               </div>
             </div>{' '}
             {/* card 3 */}
-            <div className="rounded-2xl shadow-sm shadow-sky-500 p-5 leading-7 text-slate-400">
+            <div className="rounded-2xl shadow-sm shadow-sky-500 p-5 leading-7 text-slate-400 backdrop-blur-sm">
               Mit Tobias Schmid an meiner Seite fühle ich mich stets gut
               betreut. Sein positiver Elan und seine Freude an der
               Zusammenarbeit ist sogar über den Bildschirm spürbar. Was mir
@@ -509,7 +509,7 @@ export default function Home() {
           {/* col right */}
           <div className="flex flex-col gap-5 w-full md:w-1/2">
             {/* card 4 */}
-            <div className="rounded-2xl shadow-sm shadow-sky-500 p-5 leading-7 text-slate-400">
+            <div className="rounded-2xl shadow-sm shadow-sky-500 p-5 leading-7 text-slate-400 backdrop-blur-sm">
               Tobias built our website from scratch and we could not be happier
               with the result. He did a great job on how it looks and it
               functions perfectly. The website means a lot to our growing
@@ -535,7 +535,7 @@ export default function Home() {
               </div>
             </div>
             {/* card 5 */}
-            <div className="rounded-2xl shadow-sm shadow-sky-500 p-5 leading-7 text-slate-400">
+            <div className="rounded-2xl shadow-sm shadow-sky-500 p-5 leading-7 text-slate-400 backdrop-blur-sm">
               Tobias supported the elho online and consumer care team for
               several months in a very flexible and highly qualitative way. He
               helped to prepare the launch of our German webshop. Among others
