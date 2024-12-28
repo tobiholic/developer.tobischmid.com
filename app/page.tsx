@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import picFernschicht from '../app/assets/fernschicht.de.webp';
-import picTobischmid from '../app/assets/website-portfolio.webp';
-import picHerzensstark from '../app/assets/herzensstark-life.webp';
+import picTobischmid from 'app/assets/website-portfolio.webp';
+import picFernschicht from 'app/assets/fernschicht.de.webp';
+import picHerzensstark from 'app/assets/herzensstark-life.webp';
 import ScrambleText from './_components/ScrambleText';
 import Navbar from './_components/Navbar';
 
@@ -297,7 +297,7 @@ export default function Home() {
             </div>
           </div>
           {/* card2 */}
-          <div className="relative w-[330px] hover:scale-[102%] transition-all text-slate-400 border border-1 rounded-xl border-black shadow-sm shadow-sky-800 ">
+          <div className="relative w-[330px] hover:scale-[102%] transition-all text-slate-400 border border-1 rounded-xl border-black shadow-sm shadow-sky-800">
             <Link
               href="https://tobischmid.com"
               target="_blank"

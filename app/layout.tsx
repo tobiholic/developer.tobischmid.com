@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import './globals.css';
+import { Josefin_Sans, Lora, Ysabeau } from 'next/font/google';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -11,6 +12,20 @@ const geistMono = localFont({
   src: './fonts/GeistMonoVF.woff',
   variable: '--font-geist-mono',
   weight: '100 900',
+});
+
+const ysabeau = Ysabeau({
+  weight: ['200', '300', '400', '500', '600'],
+  subsets: ['latin'],
+});
+
+const lora = Lora({
+  weight: ['400', '500', '600'],
+  subsets: ['latin'],
+});
+
+const josefine = Josefin_Sans({
+  subsets: ['latin'],
 });
 
 export const metadata: Metadata = {
@@ -59,11 +74,7 @@ export default function RootLayout({
       lang="en"
       className="selection:bg-sky-500 selection:bg-opacity-20 scroll-smooth"
     >
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <body className={`${josefine.className} antialiased`}>{children}</body>
     </html>
   );
 }
