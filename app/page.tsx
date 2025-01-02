@@ -90,7 +90,7 @@ export default function Home() {
             </button>
           </Link>
           <Link
-            href="https://www.tobischmid.com/wp-content/uploads/2024/08/CV-Tobias-Schmid.pdf"
+            href="https://www.tobischmid.com/wp-content/uploads/2024/12/CV-Tobias-Schmid.pdf"
             target="_blank"
             aria-label="CV Tobias Schmid"
           >
