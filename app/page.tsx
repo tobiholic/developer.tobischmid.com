@@ -6,39 +6,62 @@ import picHerzensstark from 'app/assets/herzensstark-life.webp';
 import ScrambleText from './_components/ScrambleText';
 import Navbar from './_components/Navbar';
 
-const stack1 = [
-  'Next.js',
-  'React',
-  'HTML5',
-  'CSS',
-  'Bootstrap 5',
-  'TailwindCSS',
-  'RadixUI',
-  'Breakdance',
-  'NPM',
+const stack1: { label: string; href: string }[] = [
+  { label: 'Next.js', href: 'https://nextjs.org/' },
+  { label: 'React', href: 'https://react.dev/' },
+  {
+    label: 'HTML5',
+    href: 'https://developer.mozilla.org/en-US/docs/Glossary/HTML5',
+  },
+  { label: 'CSS', href: 'https://www.w3schools.com/css/' },
+  { label: 'Bootstrap 5', href: 'https://getbootstrap.com/' },
+  { label: 'TailwindCSS', href: 'https://tailwindcss.com/' },
+  { label: 'RadixUI', href: 'https://www.radix-ui.com/' },
+  { label: 'Breakdance', href: 'https://breakdance.com/' },
+  { label: 'NPM', href: 'https://www.npmjs.com/' },
+  { label: 'ShadcnUI', href: 'https://ui.shadcn.com/' },
 ];
 
-const stack2 = [
-  'DaisyUI',
-  'Javascript',
-  'Typescript',
-  'Git',
-  'Github',
-  'Command Line',
-  'ChakraUI',
-  'Plausible',
-  'Datagrip',
+const stack2: { label: string; href: string }[] = [
+  { label: 'DaisyUI', href: 'https://daisyui.com/' },
+  {
+    label: 'Javascript',
+    href: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+  },
+  {
+    label: 'Typescript',
+    href: 'https://www.typescriptlang.org/',
+  },
+  { label: 'Github', href: 'https://github.com/tobiholic' },
+  { label: 'Git', href: 'https://git-scm.com/' },
+  {
+    label: 'Command Line',
+    href: 'https://www.w3schools.com/whatis/whatis_cli.asp',
+  },
+  { label: 'ChakraUI', href: 'https://www.chakra-ui.com/' },
+  { label: 'Plausible', href: 'https://plausible.io' },
+  { label: 'NPM', href: 'https://www.npmjs.com/' },
+  { label: 'Datagrip', href: 'https://www.jetbrains.com/datagrip/' },
 ];
 
-const stack3 = [
-  'MySQL (basic)',
-  'Supertokens',
-  'Vercel',
-  'Sentry',
-  'Resend',
-  'Google Analytics',
-  'PHP (basics)',
-  'Stripe',
+const stack3: { label: string; href: string }[] = [
+  { label: 'MySQL (basics)', href: 'https://www.mysql.com/' },
+  {
+    label: 'SuperTokens',
+    href: 'https://supertokens.com/',
+  },
+  {
+    label: 'Vercel',
+    href: 'https://vercel.com/',
+  },
+  { label: 'Sentry', href: 'https://sentry.io/welcome/' },
+  { label: 'Resend', href: 'https://resend.com/' },
+  {
+    label: 'Google Analytics',
+    href: 'https://developers.google.com/analytics',
+  },
+  { label: 'PHP (basics)', href: 'https://www.php.net/' },
+  { label: 'Stripe', href: 'https://stripe.com/en-de' },
 ];
 
 export default function Home() {
@@ -206,32 +229,29 @@ export default function Home() {
           <div className="absolute top-0 left-0 h-full w-3 bg-gradient-to-r from-[#0C1217] to-transparent pointer-events-none z-10" />
           <div className="relative flex gap-3 animate-flowRight">
             {stack1.map((skill, index) => (
-              <button
-                key={index}
-                className="px-2 md:px-4 py-2 md:py-2 text-sm md:text-md text-gray-300 shadow-sm shadow-slate-600 rounded-lg border border-1 border-slate-800 bg-gradient-to-tr from-slate-600 via-slate-950 to-slate-800 whitespace-nowrap"
-              >
-                {skill}
-              </button>
+              <Link href={skill.href} key={index} target="_blank">
+                <button className="px-2 md:px-4 py-2 md:py-2 text-sm md:text-md text-gray-300 shadow-sm shadow-slate-600 rounded-lg border border-1 border-slate-800 bg-gradient-to-tr from-slate-600 via-slate-950 to-slate-800 whitespace-nowrap">
+                  {skill.label}
+                </button>
+              </Link>
             ))}
           </div>
           <div className="flex gap-3 animate-flowLeft">
             {stack2.map((skill, index) => (
-              <button
-                key={index}
-                className="px-2 md:px-4 py-2 md:py-2 text-sm md:text-md text-gray-300 shadow-sm shadow-slate-600 rounded-lg border border-1 border-slate-800 bg-gradient-to-tr from-slate-600 via-slate-950 to-slate-800 whitespace-nowrap"
-              >
-                {skill}
-              </button>
+              <Link href={skill.href} key={index} target="_blank">
+                <button className="px-2 md:px-4 py-2 md:py-2 text-sm md:text-md text-gray-300 shadow-sm shadow-slate-600 rounded-lg border border-1 border-slate-800 bg-gradient-to-tr from-slate-600 via-slate-950 to-slate-800 whitespace-nowrap">
+                  {skill.label}
+                </button>
+              </Link>
             ))}
           </div>
           <div className="flex gap-3 animate-flowRight">
             {stack3.map((skill, index) => (
-              <button
-                key={index}
-                className="px-2 md:px-4 py-2 md:py-2 text-sm md:text-md text-gray-300 shadow-sm shadow-slate-600 rounded-lg border border-1 border-slate-800 bg-gradient-to-tr from-slate-600 via-slate-950 to-slate-800 whitespace-nowrap"
-              >
-                {skill}
-              </button>
+              <Link href={skill.href} key={index} target="_blank">
+                <button className="px-2 md:px-4 py-2 md:py-2 text-sm md:text-md text-gray-300 shadow-sm shadow-slate-600 rounded-lg border border-1 border-slate-800 bg-gradient-to-tr from-slate-600 via-slate-950 to-slate-800 whitespace-nowrap">
+                  {skill.label}
+                </button>
+              </Link>
             ))}
           </div>
           <div className="absolute top-0 right-0 h-full w-10 bg-gradient-to-l from-[#0A0F19] to-transparent pointer-events-none z-10" />
